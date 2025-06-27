@@ -1,152 +1,1363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salt and Light Kingdom</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Lora and Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        /* Custom styles for hero section */
-        .hero-section {
-            background: linear-gradient(135deg, #1e3a8a, #60a5fa); /* Blue gradient */
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-content {
-            text-align: center;
-            color: white;
-            padding: 2rem;
-        }
-        .hero-content h1 {
-            font-family: 'Lora', serif;
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            line-height: 1.2;
-        }
-        .hero-content p {
-            font-family: 'Open Sans', sans-serif;
-            font-size: clamp(1.125rem, 3vw, 1.5rem);
-            margin: 1.5rem 0;
-        }
-        /* CTA Button */
-        .cta-button {
-            font-family: 'Open Sans', sans-serif;
-            padding: 1rem 2.5rem;
-            font-size: 1.125rem;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-        .cta-button:hover {
-            transform: scale(1.05);
-        }
-        /* Card styles */
-        .about-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .about-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 20px rgba(0, 51, 102, 0.15);
-        }
-        /* Get Involved section */
-        .get-involved {
-            background: linear-gradient(135deg, #dbeafe, #f0f9ff);
-        }
-    </style>
+	<title>Salt And Light Kingdom</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<body class="bg-blue-50">
-<!-- Hero Section -->
-<section class="hero-section">
-    <div class="hero-content">
-        <h1 class="font-bold">Salt and Light Kingdom</h1>
-        <p class="max-w-lg mx-auto">
-            Inspiring faith and hope through Christian media that shines Christ’s love.
-        </p>
-        <a href="#about-us" class="cta-button bg-blue-600 text-white hover:bg-blue-700 rounded-full inline-block mt-6">
-            Explore Our Vision
-        </a>
-    </div>
-</section>
 
-<!-- About Us Section (Cards Format) -->
-<section id="about-us" class="py-20 px-4 md:px-8 lg:px-16 bg-white">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold font-serif text-blue-900 mb-12 text-center">
-            About Us
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Mission Card -->
-            <div class="about-card bg-blue-50 rounded-xl p-8 shadow-lg text-center">
-                <i class="fas fa-heart text-blue-600 text-3xl mb-4"></i>
-                <h3 class="text-xl font-semibold font-serif text-blue-800 mb-4">
-                    Our Mission
-                </h3>
-                <p class="text-blue-600 font-sans text-base leading-relaxed">
-                    To spread the message of hope and faith through engaging Christian content and storytelling.
-                </p>
-            </div>
-            <!-- Vision Card -->
-            <div class="about-card bg-blue-50 rounded-xl p-8 shadow-lg text-center">
-                <i class="fas fa-users text-blue-600 text-3xl mb-4"></i>
-                <h3 class="text-xl font-semibold font-serif text-blue-800 mb-4">
-                    Our Vision
-                </h3>
-                <p class="text-blue-600 font-sans text-base leading-relaxed">
-                    To build a community where believers and seekers alike can connect and be inspired.
-                </p>
-            </div>
-            <!-- Channels Card -->
-            <div class="about-card bg-blue-50 rounded-xl p-8 shadow-lg text-center">
-                <i class="fas fa-broadcast-tower text-blue-600 text-3xl mb-4"></i>
-                <h3 class="text-xl font-semibold font-serif text-blue-800 mb-4">
-                    Our Channels
-                </h3>
-                <p class="text-blue-600 font-sans text-base leading-relaxed">
-                    Delivering articles, podcasts, and videos that uplift and encourage on your spiritual journey.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
 
-<!-- Get Involved Section -->
-<section class="get-involved py-16 px-4 md:px-8 lg:px-16">
-    <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-2xl md:text-3xl font-bold font-serif text-blue-900 mb-6">
-            Get Involved
-        </h2>
-        <p class="text-blue-600 font-sans text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
-            Join our community to share your faith, contribute content, or support our mission to spread Christ’s light.
-        </p>
-        <a href="#contact" class="inline-block bg-blue-500 text-white hover:bg-blue-600 rounded-full px-6 py-3 font-sans text-base transition-colors">
-            Join Us Today
-        </a>
-    </div>
-</section>
+	<div id="header-wrap">
 
-<!-- Footer -->
-<footer class="bg-blue-900 text-white py-10 px-4">
-    <div class="max-w-6xl mx-auto text-center">
-        <p class="font-sans text-sm md:text-base mb-4">
-            © 2025 Salt and Light Kingdom. All rights reserved.
-        </p>
-        <div class="flex justify-center space-x-6 mb-4">
-            <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f text-lg"></i></a>
-            <a href="#" class="hover:text-blue-400"><i class="fab fa-youtube text-lg"></i></a>
-            <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram text-lg"></i></a>
-        </div>
-        <div class="flex justify-center space-x-4">
-            <a href="#" class="hover:text-blue-400 font-sans text-sm md:text-base">Contact Us</a>
-            <a href="#" class="hover:text-blue-400 font-sans text-sm md:text-base">Privacy Policy</a>
-            <a href="#" class="hover:text-blue-400 font-sans text-sm md:text-base">Terms of Service</a>
-        </div>
-    </div>
-</footer>
+		<div class="top-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="social-links">
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=61577382988602" target="_blank">
+										<i class="icon icon-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.tiktok.com/@saltandlightkingdom" target="_blank">
+										<i class="icon icon-tiktok"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/salt.andlightkingdomorg/" target="_blank">
+										<i class="icon icon-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/@your-channel-name" target="_blank">
+										<i class="icon icon-youtube-play"></i>
+									</a>
+								</li>
+							</ul>
+						</div> <!--social-links-->
+
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											type="search">
+									</form>
+								</div>
+							</div>
+
+						</div><!--top-right-->
+					</div>
+
+				</div>
+			</div>
+		</div><!--top-content-->
+
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-2">
+						<div class="main-logo">
+							<a href="index.html">
+								<img src="images/main-logo.png" alt="logo" style="width: 80px; height: auto;">
+							</a>
+						</div>
+					</div>
+
+
+					<div class="col-md-10">
+
+						<nav id="navbar">
+							<div class="main-menu stellarnav">
+								<ul class="menu-list">
+									<li class="menu-item active"><a href="#home">Home</a></li>
+<!--									<li class="menu-item has-sub">-->
+<!--										<a href="#pages" class="nav-link">Pages</a>-->
+
+<!--										<ul>-->
+<!--											<li class="active"><a href="index.html">Home</a></li>-->
+<!--											<li><a href="index.html">About</a></li>-->
+<!--											<li><a href="index.html">Styles</a></li>-->
+<!--											<li><a href="index.html">Blog</a></li>-->
+<!--											<li><a href="index.html">Post Single</a></li>-->
+<!--											<li><a href="index.html">Our Store</a></li>-->
+<!--											<li><a href="index.html">Product Single</a></li>-->
+<!--											<li><a href="index.html">Contact</a></li>-->
+<!--											<li><a href="index.html">Thank You</a></li>-->
+<!--										</ul>-->
+
+<!--									</li>-->
+<!--									<li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>-->
+<!--									<li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>-->
+<!--									<li class="menu-item"><a href="#special-offer" class="nav-link">Offer</a></li>-->
+<!--									<li class="menu-item"><a href="#latest-blog" class="nav-link">Articles</a></li>-->
+<!--									<li class="menu-item"><a href="#download-app" class="nav-link">Download App</a></li>-->
+								</ul>
+
+								<div class="hamburger">
+									<span class="bar"></span>
+									<span class="bar"></span>
+									<span class="bar"></span>
+								</div>
+
+							</div>
+						</nav>
+
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+	</div><!--header-wrap-->
+
+	<section id="billboard">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<button class="prev slick-arrow">
+						<i class="icon icon-arrow-left"></i>
+					</button>
+
+					<div class="main-slider pattern-overlay">
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Harry the Hedgehog</h2>
+								<h3 class="banner-title">Inspired by the Biblical Parable of The Good Samaritan</h3>
+								<p>Teach kids the meaning of true kindness through Harry the Hedgehog!
+									Join Harry on a delightful adventure in a whimsical forest where a proud peacock and a busy lion pass by someone in need.
+									But Harry — a small yet mighty hedgehog — stops to help, showing what it truly means to love your neighbour.
+									Told in joyful limericks with adorable animal illustrations, this retelling of The Good Samaritan brings compassion to life for children aged 2–8.</p>
+								<div class="btn-wrap">
+									<a href="https://www.amazon.co.uk/dp/B0F83NX3BK"
+									   class="btn btn-outline-accent btn-accent-arrow"
+									   target="_blank"
+									   rel="noopener noreferrer">
+										Buy it on Amazon
+										<i class="icon icon-ns-arrow-right"></i>
+									</a>
+
+									<a href="https://www.youtube.com/shorts/hCoVGx_jP0A"
+									   class="btn btn-outline-accent btn-accent-arrow"
+									   target="_blank"
+									   rel="noopener noreferrer">
+										Watch the Book as a YouTube ShortS
+										<i class="icon icon-youtube-play"></i> </a>
+								</div>
+
+							</div><!--banner-content-->
+							<img src="images/harry-hedgehog-banner.jpg" alt="Harry the Hedgehog Book Banner" class="banner-image responsive-image">
+						</div><!--slider-item-->
+
+<!--						<div class="slider-item">-->
+<!--							<div class="banner-content">-->
+<!--								<h2 class="banner-title">Birds gonna be Happy</h2>-->
+<!--								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero-->
+<!--									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis-->
+<!--									urna, a eu.</p>-->
+<!--								<div class="btn-wrap">-->
+<!--									<a href="#" class="btn btn-outline-accent btn-accent-arrow">Read More<i-->
+<!--											class="icon icon-ns-arrow-right"></i></a>-->
+<!--								</div>-->
+<!--							</div>&lt;!&ndash;banner-content&ndash;&gt;-->
+<!--							<img src="images/main-banner2.jpg" alt="banner" class="banner-image">-->
+<!--						</div>&lt;!&ndash;slider-item&ndash;&gt;-->
+
+					</div><!--slider-->
+
+					<button class="next slick-arrow">
+						<i class="icon icon-arrow-right"></i>
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+<!--	<section id="client-holder" data-aos="fade-up">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="inner-content">-->
+<!--					<div class="logo-wrap">-->
+<!--						<div class="grid">-->
+<!--							<a href="#"><img src="images/client-image1.png" alt="client"></a>-->
+<!--							<a href="#"><img src="images/client-image2.png" alt="client"></a>-->
+<!--							<a href="#"><img src="images/client-image3.png" alt="client"></a>-->
+<!--							<a href="#"><img src="images/client-image4.png" alt="client"></a>-->
+<!--							<a href="#"><img src="images/client-image5.png" alt="client"></a>-->
+<!--						</div>-->
+<!--					</div>&lt;!&ndash;image-holder&ndash;&gt;-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+	<section id="client-holder" data-aos="fade-up">
+		<div class="container">
+			<div class="row">
+				<div class="section-header align-center">
+					<div class="title">
+						<span>Socail Media</span>
+					</div>
+					<h2 class="section-title">Follow us on</h2>
+				</div>
+				<div class="inner-content">
+					<div class="logo-wrap">
+						<div class="grid">
+
+							<!-- Facebook -->
+							<a href="https://www.facebook.com/profile.php?id=61577382988602" target="_blank" rel="noopener noreferrer">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-label="Facebook">
+									<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+								</svg>
+							</a>
+
+							<!-- TikTok -->
+							<a href="https://www.tiktok.com/@saltandlightkingdom" target="_blank" rel="noopener noreferrer">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-label="TikTok">
+									<path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/>
+								</svg>
+							</a>
+
+							<!-- Instagram -->
+							<a href="https://www.instagram.com/salt.andlightkingdomorg/" target="_blank" rel="noopener noreferrer">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-label="Instagram">
+									<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+								</svg>
+							</a>
+
+							<!-- YouTube -->
+							<a href="https://www.youtube.com/@saltandlightkingdomorg/shorts" target="_blank" rel="noopener noreferrer">
+								<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-label="YouTube">
+									<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+								</svg>
+							</a>
+
+						</div>
+					</div><!--logo-wrap-->
+				</div><!--inner-content-->			</div><!--row-->
+		</div><!--container-->
+	</section>
+
+
+<!--	<section id="featured-books" class="py-5 my-5">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-md-12">-->
+
+<!--					<div class="section-header align-center">-->
+<!--						<div class="title">-->
+<!--							<span>Some quality items</span>-->
+<!--						</div>-->
+<!--						<h2 class="section-title">Featured Books</h2>-->
+<!--					</div>-->
+
+<!--					<div class="product-list" data-aos="fade-up">-->
+<!--						<div class="row">-->
+
+<!--							<div class="col-md-3">-->
+<!--								<div class="product-item">-->
+<!--									<figure class="product-style">-->
+<!--										<img src="images/product-item1.jpg" alt="Books" class="product-item">-->
+<!--										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--											Cart</button>-->
+<!--									</figure>-->
+<!--									<figcaption>-->
+<!--										<h3>Simple way of piece life</h3>-->
+<!--										<span>Armor Ramsey</span>-->
+<!--										<div class="item-price">$ 40.00</div>-->
+<!--									</figcaption>-->
+<!--								</div>-->
+<!--							</div>-->
+
+<!--							<div class="col-md-3">-->
+<!--								<div class="product-item">-->
+<!--									<figure class="product-style">-->
+<!--										<img src="images/product-item2.jpg" alt="Books" class="product-item">-->
+<!--										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--											Cart</button>-->
+<!--									</figure>-->
+<!--									<figcaption>-->
+<!--										<h3>Great travel at desert</h3>-->
+<!--										<span>Sanchit Howdy</span>-->
+<!--										<div class="item-price">$ 38.00</div>-->
+<!--									</figcaption>-->
+<!--								</div>-->
+<!--							</div>-->
+
+<!--							<div class="col-md-3">-->
+<!--								<div class="product-item">-->
+<!--									<figure class="product-style">-->
+<!--										<img src="images/product-item3.jpg" alt="Books" class="product-item">-->
+<!--										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--											Cart</button>-->
+<!--									</figure>-->
+<!--									<figcaption>-->
+<!--										<h3>The lady beauty Scarlett</h3>-->
+<!--										<span>Arthur Doyle</span>-->
+<!--										<div class="item-price">$ 45.00</div>-->
+<!--									</figcaption>-->
+<!--								</div>-->
+<!--							</div>-->
+
+<!--							<div class="col-md-3">-->
+<!--								<div class="product-item">-->
+<!--									<figure class="product-style">-->
+<!--										<img src="images/product-item4.jpg" alt="Books" class="product-item">-->
+<!--										<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--											Cart</button>-->
+<!--									</figure>-->
+<!--									<figcaption>-->
+<!--										<h3>Once upon a time</h3>-->
+<!--										<span>Klien Marry</span>-->
+<!--										<div class="item-price">$ 35.00</div>-->
+<!--									</figcaption>-->
+<!--								</div>-->
+<!--							</div>-->
+
+<!--						</div>&lt;!&ndash;ft-books-slider&ndash;&gt;-->
+<!--					</div>&lt;!&ndash;grid&ndash;&gt;-->
+
+
+<!--				</div>&lt;!&ndash;inner-content&ndash;&gt;-->
+<!--			</div>-->
+
+<!--			<div class="row">-->
+<!--				<div class="col-md-12">-->
+
+<!--					<div class="btn-wrap align-right">-->
+<!--						<a href="#" class="btn-accent-arrow">View all products <i-->
+<!--								class="icon icon-ns-arrow-right"></i></a>-->
+<!--					</div>-->
+
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+	<section id="about-us-vision" class="py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Who We Are</span>
+						</div>
+						<h2 class="section-title">About Us</h2>
+					</div>
+
+					<div class="vision-grid" data-aos="fade-up">
+						<div class="row">
+
+							<div class="col-md-4">
+								<a href="#" class="vision-card-link">
+									<div class="vision-card">
+										<div class="vision-icon-wrap">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+ 										</div>
+										<div class="vision-content">
+											<h3>Our Mission</h3>
+											<p>To spread the message of hope and faith through engaging Christian content and storytelling.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-md-4">
+								<a href="#" class="vision-card-link">
+									<div class="vision-card">
+										<div class="vision-icon-wrap">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM320 256a80 80 0 1 1 0 160a80 80 0 1 1 0-160z"/></svg>
+										</div>
+										<div class="vision-content">
+											<h3>Our Vision</h3>
+											<p>To build a community where believers and seekers alike can connect and be inspired.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+
+							<div class="col-md-4">
+								<a href="resources.html" class="vision-card-link">
+									<div class="vision-card">
+										<div class="vision-icon-wrap">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-radio"><circle cx="12" cy="12" r="2"></circle><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path></svg>
+ 										</div>
+										<div class="vision-content">
+											<h3>Our Channels</h3>
+											<p>Delivering articles, podcasts, and videos that uplift and encourage on your spiritual journey.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	<section id="best-selling" class="leaf-pattern-overlay">-->
+<!--		<div class="corner-pattern-overlay"></div>-->
+<!--		<div class="container">-->
+<!--			<div class="row justify-content-center">-->
+
+<!--				<div class="col-md-8">-->
+
+<!--					<div class="row">-->
+
+<!--						<div class="col-md-6">-->
+<!--							<figure class="products-thumb">-->
+<!--								<img src="images/single-image.jpg" alt="book" class="single-image">-->
+<!--							</figure>-->
+<!--						</div>-->
+
+<!--						<div class="col-md-6">-->
+<!--							<div class="product-entry">-->
+<!--								<h2 class="section-title divider">Best Selling Book</h2>-->
+
+<!--								<div class="products-content">-->
+<!--									<div class="author-name">By Timbur Hood</div>-->
+<!--									<h3 class="item-title">Birds gonna be happy</h3>-->
+<!--									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet,-->
+<!--										libero ipsum enim pharetra hac.</p>-->
+<!--									<div class="item-price">$ 45.00</div>-->
+<!--									<div class="btn-wrap">-->
+<!--										<a href="#" class="btn-accent-arrow">shop it now <i-->
+<!--												class="icon icon-ns-arrow-right"></i></a>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--							</div>-->
+<!--						</div>-->
+
+<!--					</div>-->
+<!--					&lt;!&ndash; / row &ndash;&gt;-->
+
+<!--				</div>-->
+
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+<!--	<section id="popular-books" class="bookshelf py-5 my-5">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-md-12">-->
+
+<!--					<div class="section-header align-center">-->
+<!--						<div class="title">-->
+<!--							<span>Some quality items</span>-->
+<!--						</div>-->
+<!--						<h2 class="section-title">Popular Books</h2>-->
+<!--					</div>-->
+
+<!--					<ul class="tabs">-->
+<!--						<li data-tab-target="#all-genre" class="active tab">All Genre</li>-->
+<!--						<li data-tab-target="#business" class="tab">Business</li>-->
+<!--						<li data-tab-target="#technology" class="tab">Technology</li>-->
+<!--						<li data-tab-target="#romantic" class="tab">Romantic</li>-->
+<!--						<li data-tab-target="#adventure" class="tab">Adventure</li>-->
+<!--						<li data-tab-target="#fictional" class="tab">Fictional</li>-->
+<!--					</ul>-->
+
+<!--					<div class="tab-content">-->
+<!--						<div id="all-genre" data-tab-content class="active">-->
+<!--							<div class="row">-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item1.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Portrait photography</h3>-->
+<!--											<span>Adam Silber</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item2.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Once upon a time</h3>-->
+<!--											<span>Klien Marry</span>-->
+<!--											<div class="item-price">$ 35.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item3.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Tips of simple lifestyle</h3>-->
+<!--											<span>Bratt Smith</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item4.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Just felt from outside</h3>-->
+<!--											<span>Nicole Wilson</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--							</div>-->
+<!--							<div class="row">-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item5.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Peaceful Enlightment</h3>-->
+<!--											<span>Marmik Lama</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item6.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Great travel at desert</h3>-->
+<!--											<span>Sanchit Howdy</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item7.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Life among the pirates</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item8.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Simple way of piece life</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--							</div>-->
+
+<!--						</div>-->
+<!--						<div id="business" data-tab-content>-->
+<!--							<div class="row">-->
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item2.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Peaceful Enlightment</h3>-->
+<!--											<span>Marmik Lama</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item4.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Great travel at desert</h3>-->
+<!--											<span>Sanchit Howdy</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item6.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Life among the pirates</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item8.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Simple way of piece life</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						<div id="technology" data-tab-content>-->
+<!--							<div class="row">-->
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item1.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Peaceful Enlightment</h3>-->
+<!--											<span>Marmik Lama</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item3.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Great travel at desert</h3>-->
+<!--											<span>Sanchit Howdy</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item5.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Life among the pirates</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item7.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Simple way of piece life</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						<div id="romantic" data-tab-content>-->
+<!--							<div class="row">-->
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item1.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Peaceful Enlightment</h3>-->
+<!--											<span>Marmik Lama</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item3.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Great travel at desert</h3>-->
+<!--											<span>Sanchit Howdy</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item5.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Life among the pirates</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item7.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Simple way of piece life</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						<div id="adventure" data-tab-content>-->
+<!--							<div class="row">-->
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item5.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Life among the pirates</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item7.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Simple way of piece life</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						<div id="fictional" data-tab-content>-->
+<!--							<div class="row">-->
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item5.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Life among the pirates</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+
+<!--								<div class="col-md-3">-->
+<!--									<div class="product-item">-->
+<!--										<figure class="product-style">-->
+<!--											<img src="images/tab-item7.jpg" alt="Books" class="product-item">-->
+<!--											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--												Cart</button>-->
+<!--										</figure>-->
+<!--										<figcaption>-->
+<!--											<h3>Simple way of piece life</h3>-->
+<!--											<span>Armor Ramsey</span>-->
+<!--											<div class="item-price">$ 40.00</div>-->
+<!--										</figcaption>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--					</div>-->
+
+<!--				</div>&lt;!&ndash;inner-tabs&ndash;&gt;-->
+
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+<!--	<section id="quotation" class="align-center pb-5 mb-5">-->
+<!--		<div class="inner-content">-->
+<!--			<h2 class="section-title divider">Quote of the day</h2>-->
+<!--			<blockquote data-aos="fade-up">-->
+<!--				<q>“The more that you read, the more things you will know. The more that you learn, the more places-->
+<!--					you’ll go.”</q>-->
+<!--				<div class="author-name">Dr. Seuss</div>-->
+<!--			</blockquote>-->
+<!--		</div>-->
+<!--	</section>-->
+
+<!--	<section id="special-offer" class="bookshelf pb-5 mb-5">-->
+
+<!--		<div class="section-header align-center">-->
+<!--			<div class="title">-->
+<!--				<span>Grab your opportunity</span>-->
+<!--			</div>-->
+<!--			<h2 class="section-title">Books with offer</h2>-->
+<!--		</div>-->
+
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="inner-content">-->
+<!--					<div class="product-list" data-aos="fade-up">-->
+<!--						<div class="grid product-grid">-->
+<!--							<div class="product-item">-->
+<!--								<figure class="product-style">-->
+<!--									<img src="images/product-item5.jpg" alt="Books" class="product-item">-->
+<!--									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--										Cart</button>-->
+<!--								</figure>-->
+<!--								<figcaption>-->
+<!--									<h3>Simple way of piece life</h3>-->
+<!--									<span>Armor Ramsey</span>-->
+<!--									<div class="item-price">-->
+<!--										<span class="prev-price">$ 50.00</span>$ 40.00-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</figcaption>-->
+
+<!--							<div class="product-item">-->
+<!--								<figure class="product-style">-->
+<!--									<img src="images/product-item6.jpg" alt="Books" class="product-item">-->
+<!--									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--										Cart</button>-->
+<!--								</figure>-->
+<!--								<figcaption>-->
+<!--									<h3>Great travel at desert</h3>-->
+<!--									<span>Sanchit Howdy</span>-->
+<!--									<div class="item-price">-->
+<!--										<span class="prev-price">$ 30.00</span>$ 38.00-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</figcaption>-->
+
+<!--							<div class="product-item">-->
+<!--								<figure class="product-style">-->
+<!--									<img src="images/product-item7.jpg" alt="Books" class="product-item">-->
+<!--									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--										Cart</button>-->
+<!--								</figure>-->
+<!--								<figcaption>-->
+<!--									<h3>The lady beauty Scarlett</h3>-->
+<!--									<span>Arthur Doyle</span>-->
+<!--									<div class="item-price">-->
+<!--										<span class="prev-price">$ 35.00</span>$ 45.00-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</figcaption>-->
+
+<!--							<div class="product-item">-->
+<!--								<figure class="product-style">-->
+<!--									<img src="images/product-item8.jpg" alt="Books" class="product-item">-->
+<!--									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--										Cart</button>-->
+<!--								</figure>-->
+<!--								<figcaption>-->
+<!--									<h3>Once upon a time</h3>-->
+<!--									<span>Klien Marry</span>-->
+<!--									<div class="item-price">-->
+<!--										<span class="prev-price">$ 25.00</span>$ 35.00-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</figcaption>-->
+
+<!--							<div class="product-item">-->
+<!--								<figure class="product-style">-->
+<!--									<img src="images/product-item2.jpg" alt="Books" class="product-item">-->
+<!--									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to-->
+<!--										Cart</button>-->
+<!--								</figure>-->
+<!--								<figcaption>-->
+<!--									<h3>Simple way of piece life</h3>-->
+<!--									<span>Armor Ramsey</span>-->
+<!--									<div class="item-price">$ 40.00</div>-->
+<!--								</figcaption>-->
+<!--							</div>-->
+<!--						</div>&lt;!&ndash;grid&ndash;&gt;-->
+<!--					</div>-->
+<!--				</div>&lt;!&ndash;inner-content&ndash;&gt;-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+<!--	<section id="subscribe">-->
+<!--		<div class="container">-->
+<!--			<div class="row justify-content-center">-->
+
+<!--				<div class="col-md-8">-->
+<!--					<div class="row">-->
+
+<!--						<div class="col-md-6">-->
+
+<!--							<div class="title-element">-->
+<!--								<h2 class="section-title divider">Subscribe to our newsletter</h2>-->
+<!--							</div>-->
+
+<!--						</div>-->
+<!--						<div class="col-md-6">-->
+
+<!--							<div class="subscribe-content" data-aos="fade-up">-->
+<!--								<p>Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit-->
+<!--									adipiscing enim pharetra hac.</p>-->
+<!--								<form id="form">-->
+<!--									<input type="text" name="email" placeholder="Enter your email addresss here">-->
+<!--									<button class="btn-subscribe">-->
+<!--										<span>send</span>-->
+<!--										<i class="icon icon-send"></i>-->
+<!--									</button>-->
+<!--								</form>-->
+<!--							</div>-->
+
+<!--						</div>-->
+
+<!--					</div>-->
+<!--				</div>-->
+
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+<!--	<section id="latest-blog" class="py-5 my-5">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+<!--				<div class="col-md-12">-->
+
+<!--					<div class="section-header align-center">-->
+<!--						<div class="title">-->
+<!--							<span>Read our articles</span>-->
+<!--						</div>-->
+<!--						<h2 class="section-title">Latest Articles</h2>-->
+<!--					</div>-->
+
+<!--					<div class="row">-->
+
+<!--						<div class="col-md-4">-->
+
+<!--							<article class="column" data-aos="fade-up">-->
+
+<!--								<figure>-->
+<!--									<a href="#" class="image-hvr-effect">-->
+<!--										<img src="images/post-img1.jpg" alt="post" class="post-image">-->
+<!--									</a>-->
+<!--								</figure>-->
+
+<!--								<div class="post-item">-->
+<!--									<div class="meta-date">Mar 30, 2021</div>-->
+<!--									<h3><a href="#">Reading books always makes the moments happy</a></h3>-->
+
+<!--									<div class="links-element">-->
+<!--										<div class="categories">inspiration</div>-->
+<!--										<div class="social-links">-->
+<!--											<ul>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-facebook"></i></a>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-twitter"></i></a>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-behance-square"></i></a>-->
+<!--												</li>-->
+<!--											</ul>-->
+<!--										</div>-->
+<!--									</div>&lt;!&ndash;links-element&ndash;&gt;-->
+
+<!--								</div>-->
+<!--							</article>-->
+
+<!--						</div>-->
+<!--						<div class="col-md-4">-->
+
+<!--							<article class="column" data-aos="fade-up" data-aos-delay="200">-->
+<!--								<figure>-->
+<!--									<a href="#" class="image-hvr-effect">-->
+<!--										<img src="images/post-img2.jpg" alt="post" class="post-image">-->
+<!--									</a>-->
+<!--								</figure>-->
+<!--								<div class="post-item">-->
+<!--									<div class="meta-date">Mar 29, 2021</div>-->
+<!--									<h3><a href="#">Reading books always makes the moments happy</a></h3>-->
+
+<!--									<div class="links-element">-->
+<!--										<div class="categories">inspiration</div>-->
+<!--										<div class="social-links">-->
+<!--											<ul>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-facebook"></i></a>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-twitter"></i></a>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-behance-square"></i></a>-->
+<!--												</li>-->
+<!--											</ul>-->
+<!--										</div>-->
+<!--									</div>&lt;!&ndash;links-element&ndash;&gt;-->
+
+<!--								</div>-->
+<!--							</article>-->
+
+<!--						</div>-->
+<!--						<div class="col-md-4">-->
+
+<!--							<article class="column" data-aos="fade-up" data-aos-delay="400">-->
+<!--								<figure>-->
+<!--									<a href="#" class="image-hvr-effect">-->
+<!--										<img src="images/post-img3.jpg" alt="post" class="post-image">-->
+<!--									</a>-->
+<!--								</figure>-->
+<!--								<div class="post-item">-->
+<!--									<div class="meta-date">Feb 27, 2021</div>-->
+<!--									<h3><a href="#">Reading books always makes the moments happy</a></h3>-->
+
+<!--									<div class="links-element">-->
+<!--										<div class="categories">inspiration</div>-->
+<!--										<div class="social-links">-->
+<!--											<ul>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-facebook"></i></a>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-twitter"></i></a>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<a href="#"><i class="icon icon-behance-square"></i></a>-->
+<!--												</li>-->
+<!--											</ul>-->
+<!--										</div>-->
+<!--									</div>&lt;!&ndash;links-element&ndash;&gt;-->
+
+<!--								</div>-->
+<!--							</article>-->
+
+<!--						</div>-->
+
+<!--					</div>-->
+
+<!--					<div class="row">-->
+
+<!--						<div class="btn-wrap align-center">-->
+<!--							<a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">Read All Articles<i-->
+<!--									class="icon icon-ns-arrow-right"></i></a>-->
+<!--						</div>-->
+<!--					</div>-->
+
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+<!--	<section id="download-app" class="leaf-pattern-overlay">-->
+<!--		<div class="corner-pattern-overlay"></div>-->
+<!--		<div class="container">-->
+<!--			<div class="row justify-content-center">-->
+<!--				<div class="col-md-8">-->
+<!--					<div class="row">-->
+
+<!--						<div class="col-md-5">-->
+<!--							<figure>-->
+<!--								<img src="images/device.png" alt="phone" class="single-image">-->
+<!--							</figure>-->
+<!--						</div>-->
+
+<!--						<div class="col-md-7">-->
+<!--							<div class="app-info">-->
+<!--								<h2 class="section-title divider">Download our app now !</h2>-->
+<!--								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus-->
+<!--									liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna.-->
+<!--									Adipiscing fames semper erat ac in suspendisse iaculis.</p>-->
+<!--								<div class="google-app">-->
+<!--									<img src="images/google-play.jpg" alt="google play">-->
+<!--									<img src="images/app-store.jpg" alt="app store">-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+
+<!--	<footer id="footer">-->
+<!--		<div class="container">-->
+<!--			<div class="row">-->
+
+<!--				<div class="col-md-4">-->
+
+<!--					<div class="footer-item">-->
+<!--						<div class="company-brand">-->
+<!--							<img src="images/main-logo.png" alt="logo" class="footer-logo">-->
+<!--							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus-->
+<!--								nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames-->
+<!--								semper erat ac in suspendisse iaculis.</p>-->
+<!--						</div>-->
+<!--					</div>-->
+
+<!--				</div>-->
+
+<!--				<div class="col-md-2">-->
+
+<!--					<div class="footer-menu">-->
+<!--						<h5>About Us</h5>-->
+<!--						<ul class="menu-list">-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">vision</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">articles </a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">careers</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">service terms</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">donate</a>-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+
+<!--				</div>-->
+<!--				<div class="col-md-2">-->
+
+<!--					<div class="footer-menu">-->
+<!--						<h5>Discover</h5>-->
+<!--						<ul class="menu-list">-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Home</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Books</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Authors</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Subjects</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Advanced Search</a>-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+
+<!--				</div>-->
+<!--				<div class="col-md-2">-->
+
+<!--					<div class="footer-menu">-->
+<!--						<h5>My account</h5>-->
+<!--						<ul class="menu-list">-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Sign In</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">View Cart</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">My Wishtlist</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Track My Order</a>-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+
+<!--				</div>-->
+<!--				<div class="col-md-2">-->
+
+<!--					<div class="footer-menu">-->
+<!--						<h5>Help</h5>-->
+<!--						<ul class="menu-list">-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Help center</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Report a problem</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Suggesting edits</a>-->
+<!--							</li>-->
+<!--							<li class="menu-item">-->
+<!--								<a href="#">Contact us</a>-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+
+<!--				</div>-->
+
+<!--			</div>-->
+<!--			&lt;!&ndash; / row &ndash;&gt;-->
+
+<!--		</div>-->
+<!--	</footer>-->
+
+	<div id="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="copyright">
+
+						<div class="col-md-6">
+							<p>© 2025 Salt and Light Kingdom. All rights reserved.</p>
+						</div>
+
+						<div class="col-md-6">
+							<div class="social-links align-right">
+								<ul>
+									<li>
+										<a href="https://www.facebook.com/profile.php?id=61577382988602" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V202.1c0-52.1 30.7-81.5 79.2-81.5c22.3 0 41.5 1.7 47.1 2.4V188h-27.7c-25.4 0-30.2 12.1-30.2 29.7V256h58.8l-7.7 78.2H265.1V504.5C397.3 476.6 480 376.5 480 256h32z"/></svg>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.tiktok.com/@saltandlightkingdom" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V298.1A117.1 117.1 0 1 0 325.2 207.1V122.2a209.9 209.9 0 0 1 122.8 87.7z"/></svg>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/salt.andlightkingdomorg/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9 26.3 26.2 58 34.4 93.9 36.2 37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z"/></svg>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.youtube.com/@your-channel-name" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 42.3 48.3 48.6C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.9 48.3-48.6 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.6 340V172l144 84-144 84z"/></svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
+
 </html>

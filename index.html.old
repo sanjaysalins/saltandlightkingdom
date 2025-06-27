@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt and Light Kingdom</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Lora and Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Custom styles for hero section */
+        .hero-section {
+            background: linear-gradient(135deg, #1e3a8a, #60a5fa); /* Blue gradient */
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+        .hero-content h1 {
+            font-family: 'Lora', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1.2;
+        }
+        .hero-content p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: clamp(1.125rem, 3vw, 1.5rem);
+            margin: 1.5rem 0;
+        }
+        /* CTA Button */
+        .cta-button {
+            font-family: 'Open Sans', sans-serif;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        /* Card styles */
+        .about-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .about-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0, 51, 102, 0.15);
+        }
+        /* Get Involved section */
+        .get-involved {
+            background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+        }
+    </style>
+</head>
+<body class="bg-blue-50">
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="font-bold">Salt and Light Kingdom</h1>
+        <p class="max-w-lg mx-auto">
+            Inspiring faith and hope through Christian media that shines Christ’s love.
+        </p>
+        <a href="#about-us" class="cta-button bg-blue-600 text-white hover:bg-blue-700 rounded-full inline-block mt-6">
+            Explore Our Vision
+        </a>
+    </div>
+</section>
+
+<!-- About Us Section (Cards Format) -->
+<section id="about-us" class="py-20 px-4 md:px-8 lg:px-16 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold font-serif text-blue-900 mb-12 text-center">
+            About Us
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Mission Card -->
+            <div class="about-card bg-blue-50 rounded-xl p-8 shadow-lg text-center">
+                <i class="fas fa-heart text-blue-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-semibold font-serif text-blue-800 mb-4">
+                    Our Mission
+                </h3>
+                <p class="text-blue-600 font-sans text-base leading-relaxed">
+                    To spread the message of hope and faith through engaging Christian content and storytelling.
+                </p>
+            </div>
+            <!-- Vision Card -->
+            <div class="about-card bg-blue-50 rounded-xl p-8 shadow-lg text-center">
+                <i class="fas fa-users text-blue-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-semibold font-serif text-blue-800 mb-4">
+                    Our Vision
+                </h3>
+                <p class="text-blue-600 font-sans text-base leading-relaxed">
+                    To build a community where believers and seekers alike can connect and be inspired.
+                </p>
+            </div>
+            <!-- Channels Card -->
+            <div class="about-card bg-blue-50 rounded-xl p-8 shadow-lg text-center">
+                <i class="fas fa-broadcast-tower text-blue-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-semibold font-serif text-blue-800 mb-4">
+                    Our Channels
+                </h3>
+                <p class="text-blue-600 font-sans text-base leading-relaxed">
+                    Delivering articles, podcasts, and videos that uplift and encourage on your spiritual journey.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Get Involved Section -->
+<section class="get-involved py-16 px-4 md:px-8 lg:px-16">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold font-serif text-blue-900 mb-6">
+            Get Involved
+        </h2>
+        <p class="text-blue-600 font-sans text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
+            Join our community to share your faith, contribute content, or support our mission to spread Christ’s light.
+        </p>
+        <a href="#contact" class="inline-block bg-blue-500 text-white hover:bg-blue-600 rounded-full px-6 py-3 font-sans text-base transition-colors">
+            Join Us Today
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-10 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+        <p class="font-sans text-sm md:text-base mb-4">
+            © 2025 Salt and Light Kingdom. All rights reserved.
+        </p>
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f text-lg"></i></a>
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-youtube text-lg"></i></a>
+            <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram text-lg"></i></a>
+        </div>
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="hover:text-blue-400 font-sans text-sm md:text-base">Contact Us</a>
+            <a href="#" class="hover:text-blue-400 font-sans text-sm md:text-base">Privacy Policy</a>
+            <a href="#" class="hover:text-blue-400 font-sans text-sm md:text-base">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
