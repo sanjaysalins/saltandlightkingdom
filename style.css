@@ -2591,3 +2591,16 @@ footer#footer {
     width: 100%;
   }
 }
+
+/*----- Cient-holder Section
+--------------------------------------------------------------*/
+#popular-shorts {
+  background: #EDEBE4;
+  padding: 105px 0;
+  text-align: center;
+}
+
+#popular-shorts .logo-wrap {
+  max-width: 1000px;
+  margin: auto;
+}
