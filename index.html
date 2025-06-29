@@ -264,7 +264,14 @@
 
 						</div>
 					</div><!--logo-wrap-->
-				</div><!--inner-content-->			</div><!--row-->
+
+					<a href="https://linktr.ee/saltandlightkingdom" target="_blank" class="btn btn-primary">
+						Visit My Linktree
+					</a>
+
+
+				</div><!--inner-content-->
+			</div><!--row-->
 		</div><!--container-->
 	</section>
 
@@ -428,7 +435,87 @@
 		</div>
 	</section>
 
-<!--	<section id="best-selling" class="leaf-pattern-overlay">-->
+	<section id="popular-shorts" class="bookshelf py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>YouTube Shorts</span>
+						</div>
+						<h2 class="section-title">Popular Shorts</h2>
+					</div>
+
+					<div class="row">
+
+						<!-- First Short -->
+						<div class="col-md-3 col-sm-6 mb-4">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="https://img.youtube.com/vi/iKB2-ju_guI/hqdefault.jpg"
+										 alt="Short 1" class="product-item img-fluid"
+										 onclick="openModal('iKB2-ju_guI')"
+										 style="cursor: pointer;">
+								</figure>
+								<figcaption>
+									<h3>The Wise Beaver & the Foolish Raccoon</h3>
+								</figcaption>
+							</div>
+						</div>
+
+						<!-- Second Short -->
+						<div class="col-md-3 col-sm-6 mb-4">
+							<div class="product-item">
+								<figure class="product-style">
+									<img src="https://img.youtube.com/vi/hCoVGx_jP0A/hqdefault.jpg"
+										 alt="Short 2" class="product-item img-fluid"
+										 onclick="openModal('hCoVGx_jP0A')"
+										 style="cursor: pointer;">
+								</figure>
+								<figcaption>
+									<h3>Harry the Hedgehog: The Forest’s Good Samaritan</h3>
+								</figcaption>
+							</div>
+						</div>
+
+						<!-- Add more Shorts by replicating this block -->
+
+					</div>
+
+				</div><!-- col-md-12 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+		<!-- Modal -->
+		<div id="videoModal" class="modal" onclick="closeModal()">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<iframe id="youtubePlayer" width="100%" height="500px" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		function openModal(videoId) {
+			const modal = document.getElementById('videoModal');
+			const player = document.getElementById('youtubePlayer');
+			modal.style.display = "block";
+			player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+		}
+
+		function closeModal() {
+			const modal = document.getElementById('videoModal');
+			const player = document.getElementById('youtubePlayer');
+			modal.style.display = "none";
+			player.src = ""; // Stop video
+		}
+	</script>
+
+
+	<!--	<section id="best-selling" class="leaf-pattern-overlay">-->
 <!--		<div class="corner-pattern-overlay"></div>-->
 <!--		<div class="container">-->
 <!--			<div class="row justify-content-center">-->
@@ -470,6 +557,7 @@
 <!--			</div>-->
 <!--		</div>-->
 <!--	</section>-->
+
 
 <!--	<section id="popular-books" class="bookshelf py-5 my-5">-->
 <!--		<div class="container">-->
